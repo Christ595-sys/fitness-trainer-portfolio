@@ -4,9 +4,9 @@ const trainerData = {
     secondaryColor: "#8b5cf6",
   },
 
-  name: "Mason Steele",
+  name: "Fitness Trainer",
   role: "Elite Fitness Coach",
-  brandName: "Mason Steele",
+  brandName: "Fitness Trainer",
 
   phone: "96171505994",
   email: "coach@fitcoach.com",
@@ -52,7 +52,7 @@ const trainerData = {
     headingStart: "Build The Strongest",
     headingHighlight: "Version Of Yourself",
     paragraphs: [
-      "I'm Mason Steele, a certified fitness coach with over 8 years of experience helping people transform their physique, confidence, and mindset.",
+      "I'm Fitness trainer, a certified fitness coach with over 8 years of experience helping people transform their physique, confidence, and mindset.",
       "My coaching philosophy combines science-based training, nutrition strategies, and elite-level accountability to help clients achieve long-term sustainable results.",
     ],
     stats: [
