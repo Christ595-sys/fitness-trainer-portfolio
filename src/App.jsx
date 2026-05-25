@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-
+import ScrollToTop from "./components/ScrollToTop"
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import Programs from "./components/Programs"
@@ -32,6 +32,7 @@ function Home() {
 function App() {
   return (
     <BrowserRouter basename="/fitness-trainer-portfolio">
+      <ScrollToTop />
       <BackgroundEffects />
 
       <Navbar />
