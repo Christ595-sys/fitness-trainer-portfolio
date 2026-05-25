@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+
+  background: #050505;
+  color: white;
+
+  overflow-x: hidden;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Better image responsiveness */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Smooth animations everywhere */
+a,
+button,
+div,
+img {
+  transition: all 0.3s ease;
+}
+
+/* Premium Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    #ff4c29,
+    #8b5cf6
+  );
+
+  border-radius: 20px;
+}
+
+/* Text Selection */
+::selection {
+  background: #ff4c29;
+  color: white;
+}
+
+
+
+button:hover,
+a:hover {
+  transform: translateY(-3px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Space Grotesk', sans-serif;
+
+  letter-spacing: -1px;
+}

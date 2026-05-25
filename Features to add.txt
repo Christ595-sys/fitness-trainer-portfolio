@@ -1,0 +1,7 @@
+1- make the email work
+
+2- make anyone have a form that he/she can put his name and rate the personal trainer with a small description.
+
+3- Make the personal trainer to have full access to a dashboard of all his clients + he can add before and after photos.
+
+4- personal trainer can have two versions of the website, either just frontend or frontend and backend with the admin dashboard and everything editable.
