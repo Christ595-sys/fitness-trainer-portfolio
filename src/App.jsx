@@ -31,7 +31,7 @@ function Home() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/fitness-trainer-portfolio">
       <BackgroundEffects />
 
       <Navbar />
