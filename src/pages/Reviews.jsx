@@ -12,7 +12,7 @@ function Reviews() {
 
   const [form, setForm] = useState({
     name: "",
-    stars: 5,
+    stars: 1,
     text: "",
   })
 
@@ -33,7 +33,7 @@ function Reviews() {
 
     setForm({
       name: "",
-      stars: 5,
+      stars: 1,
       text: "",
     })
   }
@@ -55,7 +55,6 @@ function Reviews() {
           <span style={styles.gradientText}> Experience</span>
         </h1>
 
-      
       </motion.div>
 
       <motion.form
@@ -65,13 +64,16 @@ function Reviews() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
       >
-        <h2 style={styles.formTitle}>Add Testimonial</h2>
+        <h2 style={styles.formTitle}>Add Review</h2>
 
         <input
           placeholder="Your Name"
           value={form.name}
           onChange={(e) =>
-            setForm({ ...form, name: e.target.value })
+            setForm({
+              ...form,
+              name: e.target.value,
+            })
           }
           style={styles.input}
         />
@@ -82,11 +84,17 @@ function Reviews() {
               key={star}
               type="button"
               onClick={() =>
-                setForm({ ...form, stars: star })
+                setForm({
+                  ...form,
+                  stars: star,
+                })
               }
               style={{
                 ...styles.starButton,
-                color: star <= form.stars ? "#ff4c29" : "#555",
+                color:
+                  star <= form.stars
+                    ? "#ff4c29"
+                    : "#555",
               }}
             >
               ★
@@ -98,7 +106,10 @@ function Reviews() {
           placeholder="Write your review..."
           value={form.text}
           onChange={(e) =>
-            setForm({ ...form, text: e.target.value })
+            setForm({
+              ...form,
+              text: e.target.value,
+            })
           }
           style={styles.textarea}
         />
@@ -119,20 +130,27 @@ function Reviews() {
             whileHover={{
               y: -12,
               scale: 1.03,
-              boxShadow: "0 0 40px rgba(255,76,41,0.18)",
+              boxShadow:
+                "0 0 40px rgba(255,76,41,0.18)",
             }}
           >
             <div style={styles.stars}>
               {"★".repeat(review.stars)}
             </div>
 
-            <p style={styles.text}>"{review.text}"</p>
+            <p style={styles.text}>
+              "{review.text}"
+            </p>
 
             <div style={styles.line}></div>
 
-            <h4 style={styles.name}>{review.name}</h4>
+            <h4 style={styles.name}>
+              {review.name}
+            </h4>
 
-            <p style={styles.role}>{review.role}</p>
+            <p style={styles.role}>
+              {review.role}
+            </p>
           </motion.div>
         ))}
       </div>
@@ -191,7 +209,8 @@ const styles = {
   },
 
   gradientText: {
-    background: "linear-gradient(45deg, #ff4c29, #8b5cf6)",
+    background:
+      "linear-gradient(45deg, #ff4c29, #8b5cf6)",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
   },
@@ -264,12 +283,14 @@ const styles = {
     padding: "16px",
     borderRadius: "40px",
     border: "none",
-    background: "linear-gradient(45deg, #ff4c29, #8b5cf6)",
+    background:
+      "linear-gradient(45deg, #ff4c29, #8b5cf6)",
     color: "white",
     fontWeight: "700",
     fontSize: "1rem",
     cursor: "pointer",
-    boxShadow: "0 0 25px rgba(255,76,41,0.3)",
+    boxShadow:
+      "0 0 25px rgba(255,76,41,0.3)",
   },
 
   grid: {
@@ -309,7 +330,8 @@ const styles = {
     width: "60px",
     height: "2px",
     margin: "0 auto 25px",
-    background: "linear-gradient(45deg, #ff4c29, #8b5cf6)",
+    background:
+      "linear-gradient(45deg, #ff4c29, #8b5cf6)",
   },
 
   name: {

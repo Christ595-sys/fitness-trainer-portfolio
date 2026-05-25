@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+
 import ScrollToTop from "./components/ScrollToTop"
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import Programs from "./components/Programs"
 import Transformations from "./components/Transformations"
-import Testimonials from "./components/Reviews"
 import Pricing from "./pages/Pricing"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
@@ -21,7 +21,6 @@ function Home() {
       <Hero />
       <Programs />
       <Transformations />
-      <Testimonials />
       <Pricing />
       <About />
       <Contact />
