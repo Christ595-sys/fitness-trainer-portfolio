@@ -102,7 +102,7 @@ function Navbar() {
             </Link>
 
             <Link to="/reviews" style={styles.link}>
-              Testimonials
+              Reviews
             </Link>
           </div>
         )}
@@ -172,7 +172,7 @@ function Navbar() {
           </Link>
 
           <Link to="/reviews" style={styles.link} onClick={closeMenu}>
-            Testimonials
+            Reviews
           </Link>
         </motion.div>
       )}
